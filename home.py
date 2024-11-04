@@ -5,6 +5,18 @@ from modules.utils.utils import pula_linha
 
 st.set_page_config(page_title="Mecanico Virtual", page_icon="", layout="wide")
 
+if "login" not in st.session_state:
+    st.session_state["login"] = False
+    
+if "id" not in st.session_state:
+    st.session_state["id"] = None
+    
+if "message_login" not in st.session_state:
+    st.session_state["message_login"] = ""
+    
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
 initial_text = "A Wiz Solutions apresenta o \"Mecânico Virtual\", uma plataforma que facilita o diagnóstico de problemas veiculares por meio de um chatbot inteligente. Voltado para clientes e oficinas, o sistema permite que usuários relatem problemas, recebam diagnósticos precisos e obtenham orçamentos para serviços de reparo. As oficinas recebem detalhes completos dos clientes e dos diagnósticos, podendo organizar e otimizar o atendimento. Além disso, o aplicativo oferece um módulo de manutenção preventiva personalizada e suporte contínuo, promovendo uma comunicação direta e eficaz entre clientes e prestadores de serviços."
 wiz_text = "A Wiz Soluções é uma equipe formada por estudantes apaixonados por tecnologia e inovação, com o objetivo de desenvolver soluções práticas e eficientes para desafios acadêmicos e do dia a dia. Criada por Andre Marcolongo, Felipe Fidelix e Samir Hage, a Wiz Soluções combina conhecimento e criatividade para oferecer projetos que aliam tecnologia de ponta e usabilidade. Nosso propósito é explorar novas ideias e transformar o aprendizado em ferramentas que agreguem valor e inovação."     
      

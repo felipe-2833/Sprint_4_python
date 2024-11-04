@@ -74,5 +74,3 @@ def infos_user(id:int):
     st.write(f"CNH: {cliente["numeroCNH"]}")
     data_formatada = cliente["dataNascimento"].replace("-", "/")
     st.write(f"Data de nascimento: {data_formatada}")
-        
-    
