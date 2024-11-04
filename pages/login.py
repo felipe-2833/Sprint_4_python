@@ -4,10 +4,11 @@ import time
 import json
 import requests
 from modules.utils.utils import pula_linha
-from modules.database.usuario import visualizar
+from modules.database.usuario import visualizar, apagar_user, apagar_cliente, visualizar_user
 from modules.dialog.dialogs_user import infos_user, atualizar_user
 
 lista_users = visualizar()
+user = visualizar_user(st.session_state.id)
 
 st.title("login:")
 with st.container(height=200):
@@ -33,5 +34,20 @@ if st.session_state.login:
             infos_user(st.session_state.id)
         if st.button("alterar infos"):
             atualizar_user(st.session_state.id)
+        if st.button("apagar conta"):
+            apagar_user(st.session_state.id)
+            st.success("User deletado com sucesso.")
+            time.sleep(1)
+            st.session_state.login = False
+            st.rerun()
+            
+        json_data = json.dumps(user, indent=4)
+
+        st.download_button(
+            label="Baixar JSON",
+            data=json_data,
+            file_name="dados_user.json",
+            mime="application/json"
+        )
         
 
