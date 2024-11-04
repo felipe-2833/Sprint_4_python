@@ -1,9 +1,4 @@
 import streamlit as st 
-from datetime import datetime, timedelta
-import time
-import json
-import requests
-from modules.utils.utils import pula_linha
 from modules.database.veiculo import visualizar_veiculo, visualizar_modelo, visualizar_marca
 from modules.dialog.dialogs_veiculo import info_veiculo
 

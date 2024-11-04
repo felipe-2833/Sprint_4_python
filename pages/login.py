@@ -1,10 +1,8 @@
 import streamlit as st 
-from datetime import datetime, timedelta
 import time
 import json
-import requests
 from modules.utils.utils import pula_linha
-from modules.database.usuario import visualizar, apagar_user, apagar_cliente, visualizar_user
+from modules.database.usuario import visualizar, apagar_user, visualizar_user
 from modules.dialog.dialogs_user import infos_user, atualizar_user
 
 lista_users = visualizar()

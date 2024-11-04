@@ -1,7 +1,4 @@
-import streamlit as st 
 import requests
-import json
-from datetime import datetime 
 
 def criar_chamado(data:dict) -> dict:
     url = "http://localhost:8080/mecanico/chamado"

@@ -3,11 +3,9 @@ from datetime import datetime, timedelta
 import time
 import json
 import requests
-from modules.utils.utils import pula_linha
 from modules.database.usuario import visualizar_oficina, visualizar_user
 from modules.database.chamados import criar_chamado, visualizar_chamados, apagar_chamado
-from modules.database.veiculo import visualizar_veiculo, visualizar_modelo, visualizar_marca
-from modules.dialog.dialogs_veiculo import info_veiculo
+from modules.database.veiculo import visualizar_veiculo
 
 lista_veiculos = [visualizar_veiculo(920),visualizar_veiculo(1020), visualizar_veiculo(1100)]
 lista_chamados = visualizar_chamados()

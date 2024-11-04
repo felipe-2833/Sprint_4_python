@@ -3,7 +3,6 @@ from datetime import datetime, timedelta
 import time
 import json
 import requests
-from modules.utils.utils import pula_linha
 from modules.database.usuario import criar_cliente
 
 st.title("Cadastro:")

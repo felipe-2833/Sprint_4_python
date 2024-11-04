@@ -3,7 +3,6 @@ from datetime import datetime,timedelta
 import requests
 import json
 import time
-import pandas as pd
 from modules.database.usuario import visualizar_user, visualizar_cliente, atualiza_user,atualiza_cliente
 
 lista_sexo = ["M", "F"]
