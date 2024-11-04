@@ -33,7 +33,7 @@ responsáveis.
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/felipeclarindo/task-manager.git
+git clone https://github.com/felipe-2833/Sprint_4_python.git
 ```
 
 2. Instale as dependências necessárias:
@@ -58,8 +58,7 @@ Não esqueça de conferir os caminhos (path), para rodar os comandos inicializan
 
 ## Equipe
 
+- André Geraldi Marcolongo - **RM: 555285**
+- Felipe Levy Stephens Fidelix - **RM: 556426**
 - Samir Hage Neto - **RM: 557260**
-- Felipe Gabriel Lopes Pinheiro Clarindo - **RM: 554547**
-- Jennifer Suzuki - **RM: 554661**
-- Victor Augusto G. Fávaro - **RM: 555059**
-- Felipe Levi Stephens Fidelix - **RM: 556426**
+
