@@ -9,47 +9,58 @@ responsáveis.
 
 ## Funcionalidades
 
-- **Criar Tarefas:** Permite a criação de novas tarefas com informações detalhadas, como título, descrição, data de vencimento e prioridade.
+- **Cadastro usuario:** Permite cadastrar usuario
 
-- **Atualizar Tarefas:** O sistema permite a edição das tarefas existentes, ajustando campos como descrição, status, prioridade ou outro que seja.
+- **Login usuario:** Permite o login de usuario cadastrado.
 
-- **Excluir Tarefas:** Possibilidade de remover tarefas quando concluídas ou não mais necessárias.
+- **Atualizar informações:** O sistema permite a edição das informações do usuario.
 
-- **Listagem de Tarefas:** Visualização de todas as tarefas criadas, filtradas por status, prioridade ou data.
+- **Ver informações user:** Possibilidade de ver informações do usuario.
+
+- **Download json:** Download de um arquivo json ocm as informações do usuario
+
+- **Conversa com bot para criação de chamado:** Chat bot mockado para pegar informações necessarias para criar chamado para oficina.
+
+- **Criar chamado:** Possibilidade criar chamdo a partir das informações do chatbot.
+
+- **Deletar chamado:** Possibilidade detetar chamados.
+
+- **API java:** Todas as informações são consumidas de uma api craida em java.
 
 - **Banco de Dados Oracle:** Todas as informações são armazenadas e manipuladas através de uma conexão com o OracleDB, garantindo persistência e segurança dos dados.
-
-- **Sistema de notificação por email:** Receba no seu email as notificações sobre suas tarefas.
-
-- **Relatório:** Relatório sobre as tarefas pendentes, em andamento e concluídas.
 
 ## Requisitos
 
 - Python 3.x
 - oracledb
+- intellij
 
 ## Instalação
 
-1. Clone o repositório:
+1. Clone o repositório da api:
 
 ```bash
-git clone https://github.com/felipe-2833/Sprint_4_python.git
+git https://github.com/felipe-2833/MecanicoVirtualJava.git
 ```
 
-2. Instale as dependências necessárias:
+2. Abrir no intellij o projeto
+
+3. entrar na pasta /java/main/main.java e dar run 
+
+4. Clone o repositório do projeto:
+
+```bash
+git https://github.com/felipe-2833/Sprint_4_python.git
+```
+
+5. Instale as dependências necessárias:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Execute a API no terminal:
+6. Execute a API no terminal:
 
-```bash
-cd api
-fastapi dev api.py
-```
-
-4. Execute a GUI em outro terminal:
 ```bash
 streamlit run main.py
 ```
